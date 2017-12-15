@@ -1,0 +1,7 @@
+number of vertices: 4
+number of vertices: 0
+ number of vertices: 4
+before clipping Polygon 0, Vertex 0 values:  500.00,  200.00,   10.000000
+before clipping Polygon 0, Vertex 1 values:  400.00,  450.00,   10.000000
+before clipping Polygon 0, Vertex 2 values:  120.00,  220.00,   10.000000
+before clipping Polygon 0, Vertex 3 values:  400.00,   50.00,   10.000000

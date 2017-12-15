@@ -1,0 +1,35 @@
+﻿  MyCode.cpp
+c:\users\joe\git drive\graphics\nucleusgl_3\MyCode.h(146): warning C4091: 'typedef ': ignored on left of 'pointerHolders' when no variable is declared
+MyCode.cpp(99): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+MyCode.cpp(100): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+MyCode.cpp(172): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+MyCode.cpp(173): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+MyCode.cpp(174): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+MyCode.cpp(242): warning C4305: 'argument': truncation from 'double' to 'float'
+MyCode.cpp(234): warning C4101: 'polyTempQ': unreferenced local variable
+MyCode.cpp(315): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+MyCode.cpp(318): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+MyCode.cpp(353): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+MyCode.cpp(357): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+MyCode.cpp(360): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+MyCode.cpp(381): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+MyCode.cpp(382): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+MyCode.cpp(336): warning C4101: 'x_diff': unreferenced local variable
+MyCode.cpp(336): warning C4101: 'y_diff': unreferenced local variable
+MyCode.cpp(448): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+MyCode.cpp(449): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+MyCode.cpp(450): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+MyCode.cpp(451): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+MyCode.cpp(462): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+MyCode.cpp(463): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+MyCode.cpp(473): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+MyCode.cpp(474): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+MyCode.cpp(511): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+MyCode.cpp(512): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+MyCode.cpp(513): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+MyCode.cpp(514): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+MyCode.cpp(525): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+MyCode.cpp(526): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+MyCode.cpp(536): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+MyCode.cpp(537): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  NucleusGL.vcxproj -> C:\Users\Joe\git drive\graphics\NucleusGL_3\Debug\NucleusGL.exe
