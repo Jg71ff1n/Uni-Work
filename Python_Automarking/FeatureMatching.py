@@ -33,7 +33,7 @@ def bruteForceMatcher(inputImage,comparisonImage):
 	matches = sorted(matches, key=lamda x:x.distance)
 	# Draw first 10 matches.
 	outputImage = cv.drawMatches(inputImage,inputKeyPoints,comparisonImage,comparisonKeyPoints,matches[:10], flags=2)
-	plt.imshow(outputImage),plt.show()
+	plot.imshow(outputImage),plot.show()
 	return matches.distance
 
 def FLANNMatcher(inputImage,comparisonImage):
@@ -41,3 +41,22 @@ def FLANNMatcher(inputImage,comparisonImage):
 	comparisonKeyPoints, comparisonDescriptors = keyPointFinderSIFT(comparisonImage)
 
 	#FLANN parameters
+	FLANN_INDEX_KDTREE = 1
+	index_params = dict(algorithm = FLANN_INDEX_KDTREE, trees = 5)
+	search_params = dict(checks=50)
+
+	flann = cv2.FlannBasedMatcher(index_params,search_params)
+
+	matches = flann.knnMatch(inputDescriptors,comparisonDescriptors,k=2)
+	matchesMask = [[0,0] for i in xrange(len(matches))]
+	for i,(m,n) in enumerate(matches):
+    	if m.distance < 0.7*n.distance:
+        	matchesMask[i]=[1,0]
+
+	draw_params = dict(
+					matchColor = (0,255,0),
+               		singlePointColor = (255,0,0),
+                   	matchesMask = matchesMask,
+                   	flags = 0)
+	outputImage = cv2.drawMatchesKnn(inputImage,inputKeyPoints,outputImage,comparisonKeyPoints,matches,None,**draw_params)
+	plot.imshow(outputImage),plot.show()
