@@ -30,7 +30,7 @@ def bruteForceMatcher(inputImage,comparisonImage):
 	#Create Matcher
 	bfMatcher = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
 	matches = bfMatcher.match(inputDescriptors,comparisonDescriptors)
-	matches = sorted(matches, key=lamda x:x.distance)
+	matches = sorted(matches, key = lambda x:x.distance)
 	# Draw first 10 matches.
 	outputImage = cv.drawMatches(inputImage,inputKeyPoints,comparisonImage,comparisonKeyPoints,matches[:10], flags=2)
 	plot.imshow(outputImage),plot.show()
@@ -50,8 +50,8 @@ def FLANNMatcher(inputImage,comparisonImage):
 	matches = flann.knnMatch(inputDescriptors,comparisonDescriptors,k=2)
 	matchesMask = [[0,0] for i in xrange(len(matches))]
 	for i,(m,n) in enumerate(matches):
-    	if m.distance < 0.7*n.distance:
-        	matchesMask[i]=[1,0]
+		if m.distance < 0.7*n.distance:
+			matchesMask[i]=[1,0]
 
 	draw_params = dict(
 					matchColor = (0,255,0),
